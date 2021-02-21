@@ -186,8 +186,10 @@ sections:
     background_image_size: auto
     background_image_opacity: 98
 seo:
-  title: Stackbit Podcaster Theme
-  description: The preview of the Podcaster theme
+  title: Indie.Live - Livestream Commerce Powered Monetization Platform for Creators
+  description: >
+    Leading the unification of audience touch points, Indie is built to power
+    the consolidation of influencer channels and the instant commerce experience
   extra:
     - name: 'og:type'
       value: website
