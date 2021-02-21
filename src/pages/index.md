@@ -188,8 +188,8 @@ sections:
 seo:
   title: Indie.Live - Livestream Commerce Powered Monetization Platform for Creators
   description: >
-    Leading the unification of audience channels, Indie is built to power the
-    acceleration of influencer 
+    Leading the unification of audience touch points, Indie is built to power
+    the acceleration of influencer channel
   extra:
     - name: 'og:type'
       value: website
