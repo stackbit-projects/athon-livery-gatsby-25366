@@ -1,14 +1,22 @@
 import React from 'react';
 import _ from 'lodash';
-import '@exmg/livery';
-import { classNames, toStyleObj, withPrefix, htmlToReact, markdownify } from '../utils';
-
+import { classNames, toStyleObj, withPrefix } from '../utils';
 export default class HeroSection extends React.Component {
+     state = { Player: null }
+     async componentDidMount() {
+          if (window !== 'undefined') {
+               import('@exmg/livery').then(() => {
+                    this.setState({
+                         Player:
+                              <livery-player streamid="5ddb98f5e4b0937e6a4507f2" style={{ width: '100%' }}></livery-player>
+                    })
+               }).catch(error => 'An error occurred while loading the slider component')
+          }
+     }
      render() {
           let section = _.get(this.props, 'section', null);
           let padding_top = _.get(section, 'padding_top', null) || 'medium';
           let padding_bottom = _.get(section, 'padding_bottom', null) || 'medium';
-          let align_x = _.get(section, 'align', null) || 'center';
           let bg_color = _.get(section, 'background_color', null) || 'none';
           let bg_img_opacity_pct = _.get(section, 'background_image_opacity', null) || 100;
           let bg_img_opacity = bg_img_opacity_pct * 0.01;
@@ -17,9 +25,7 @@ export default class HeroSection extends React.Component {
           let bg_img_repeat = _.get(section, 'background_image_repeat', null) || 'no-repeat';
           let has_text = false;
           let has_media = false;
-          let media_width = _.get(section, 'media_width', null) || 'fifty';
           let media_pos = _.get(section, 'media_position', null) || 'top';
-          let is_horiz = false;
           let is_vert = false;
           if ((((_.get(section, 'title', null) || _.get(section, 'subtitle', null)) || _.get(section, 'content', null)) || _.get(section, 'actions', null))) {
                has_text = true;
@@ -29,9 +35,6 @@ export default class HeroSection extends React.Component {
           }
           if (((has_media === false) || (has_text === false))) {
                media_pos = 'top';
-          }
-          if (((media_pos === 'left') || (media_pos === 'right'))) {
-               is_horiz = true;
           }
           if (((media_pos === 'top') || (media_pos === 'bottom'))) {
                is_vert = true;
@@ -44,7 +47,7 @@ export default class HeroSection extends React.Component {
                          )}
 
                          <div className={classNames('container', { 'container--medium': is_vert })}>
-                              <livery-player streamid="5ddb98f5e4b0937e6a4507f2" style={{ width: '100%' }}></livery-player>
+                              {this.state.Player}
                          </div>
                     </section>
                </React.Fragment>
