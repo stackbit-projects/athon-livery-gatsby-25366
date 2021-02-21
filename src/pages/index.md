@@ -187,7 +187,9 @@ sections:
     background_image_opacity: 98
 seo:
   title: Indie.Live - Livestream Commerce Powered Monetization Platform for Creators
-  description: The preview of the Podcaster theme
+  description: >
+    Leading the unification of audience channels, Indie is BUILT TO POWER THE
+    IMPENDING CONNECTION BETWEEN SOCIAL INFLUENCERS AND COMMERCE.
   extra:
     - name: 'og:type'
       value: website
