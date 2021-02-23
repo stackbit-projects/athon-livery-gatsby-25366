@@ -4,9 +4,8 @@ sections:
   - type: hero_section
     title: This is Indie.Live
     subtitle: Optional hero section subtitle
-    content: >-
-      A podcast for Web developers interested in building Jamstack websites.
-      Hosted by Miles Tone.
+    content: |
+      **LIVESTREAM COMMERCE POWERED MONETIZATION PLATFORM FOR CREATORS**
     actions:
       - label: Subscribe to Podcast
         url: /thank-you
