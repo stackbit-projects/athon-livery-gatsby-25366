@@ -4,8 +4,9 @@ sections:
   - type: hero_section
     title: This is Indie.Live
     subtitle: LIVESTREAM COMMERCE POWERED MONETIZATION PLATFORM FOR CREATORS
-    content: |
-      **LIVESTREAM COMMERCE POWERED MONETIZATION PLATFORM FOR CREATORS**
+    content: >
+      BUILT TO POWER THE EXPLOSIVE CONNECTION BETWEEN SOCIAL INFLUENCERS AND
+      COMMERCE
     actions:
       - label: Subscribe to Podcast
         url: /thank-you
