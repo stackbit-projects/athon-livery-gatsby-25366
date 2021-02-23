@@ -3,7 +3,7 @@ title: Home
 sections:
   - type: hero_section
     title: This is Indie.Live
-    subtitle: Optional hero section subtitle
+    subtitle: LIVESTREAM COMMERCE POWERED MONETIZATION PLATFORM FOR CREATORS
     content: |
       **LIVESTREAM COMMERCE POWERED MONETIZATION PLATFORM FOR CREATORS**
     actions:
